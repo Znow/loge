@@ -28,6 +28,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Loge.Application\Loge.Application.csproj" />
+      <ProjectReference Include="..\Loge.Infrastructure\Loge.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

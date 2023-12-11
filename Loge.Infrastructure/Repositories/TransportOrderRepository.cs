@@ -3,9 +3,9 @@ using Loge.Domain.Interfaces;
 
 namespace Loge.Infrastructure.Repositories;
 
-public class TechDomainRepository : Repository<TransportOrder>, ITransportOrderRepository
+public class TransportOrderRepository : Repository<TransportOrder>, ITransportOrderRepository
 {
-    public TechDomainRepository(LogeContext dbContext) : base(dbContext)
+    public TransportOrderRepository(LogeContext dbContext) : base(dbContext)
     {
 
     }
