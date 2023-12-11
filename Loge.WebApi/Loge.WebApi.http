@@ -1,0 +1,6 @@
+@Loge.WebApi_HostAddress = http://localhost:5114
+
+GET {{Loge.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
