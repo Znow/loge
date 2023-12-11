@@ -7,11 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Interfaces\" />
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Loge.Application.Contracts\Loge.Application.Contracts.csproj" />
       <ProjectReference Include="..\Loge.Domain\Loge.Domain.csproj" />
     </ItemGroup>
 

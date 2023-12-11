@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loge.Domain", "Loge.Domain\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loge.Infrastructure", "Loge.Infrastructure\Loge.Infrastructure.csproj", "{318C4AC7-ADFF-48D4-9D3B-70336CD907C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loge.Application.Contracts", "Loge.Application.Contracts\Loge.Application.Contracts.csproj", "{E7EDBF9E-AE75-4782-9FD1-F5686AE1E686}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{318C4AC7-ADFF-48D4-9D3B-70336CD907C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{318C4AC7-ADFF-48D4-9D3B-70336CD907C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{318C4AC7-ADFF-48D4-9D3B-70336CD907C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7EDBF9E-AE75-4782-9FD1-F5686AE1E686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EDBF9E-AE75-4782-9FD1-F5686AE1E686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EDBF9E-AE75-4782-9FD1-F5686AE1E686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EDBF9E-AE75-4782-9FD1-F5686AE1E686}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
