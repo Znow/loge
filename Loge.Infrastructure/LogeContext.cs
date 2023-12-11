@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Loge.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Loge.Infrastructure;
 

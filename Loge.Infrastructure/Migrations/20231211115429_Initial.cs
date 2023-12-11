@@ -19,7 +19,8 @@ namespace Loge.Infrastructure.Migrations
                     Origin = table.Column<string>(type: "TEXT", nullable: false),
                     Destination = table.Column<string>(type: "TEXT", nullable: false),
                     State = table.Column<string>(type: "TEXT", nullable: false),
-                    Content = table.Column<string>(type: "TEXT", nullable: false)
+                    Content = table.Column<string>(type: "TEXT", nullable: false),
+                    Created = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
