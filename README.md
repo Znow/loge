@@ -1,4 +1,13 @@
 # loge
 
-.NET solution based on DDD and clean architecture to showcase sample REST and gPRC endpoints for sending and consuming data.
+.NET solution to showcase sample REST and gPRC endpoints for sending and consuming data.
+
+* Domain-Driven-Design
+* Clean Architecture
+* Unit of Work
+* Repository Pattern
+* gRPC
+* REST
+* WebAPI
+* EF Core
  
