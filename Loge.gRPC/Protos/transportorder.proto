@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "Loge.gRPC";
+
+package transportorder;
+
+// The transport order service definition.
+service TransportOrderService {
+  // Sends a transport order
+  rpc GetTransportOrder (TransportOrderRequest) returns (TransportOrderReply);
+}
+
+// The request message containing the user's name.
+message TransportOrderRequest {
+  string id = 1;
+}
+
+// The response message containing the greetings.
+message TransportOrderReply {
+  string state = 1;
+  string content = 2;
+  string origin = 3;
+  string destination = 4;
+  string created = 5;
+}
