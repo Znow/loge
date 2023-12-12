@@ -8,6 +8,18 @@ A "Transport Order" is an order of content transport from A to B with a given st
 
 The aim is to provide the enduser REST endpoints to create a TransportOrder, consume the state of TransportOrder and view historical TransportOrders.
 
+```mermaid
+  erDiagram
+    TransportOrder {
+        Guid id
+        string content
+        string origin
+        string destination
+        string state
+        DateTime created
+    }
+```
+
 # TechStack
 
 * .NET 8
@@ -74,10 +86,6 @@ Google Protobuf - Remote Procedure Call
 RPC is like WCF, but uses Protobuf's binary protocol to transfer data, limiting the data overhead.
 It is multi-platform
 
-## Diagram
-```mermaid
-
-```
 
 # Additional thoughts
 The TransportOrder, which is an entity that would have it's state and perhaps content changed when being processed,
