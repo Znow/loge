@@ -50,6 +50,10 @@ This layer injects Loge.Domain.
 .NET WebApi with API Controllers consuming services from Loge.Application and using DTO's from Loge.Application.Contracts
 
 # Architecture
+
+## SOLID Principles
+Striving to follow the SOLID Principles with Separation of Concerns, Dependency Injection, Single Responsibility etc.
+
 ## Clean Architecture
 The solution is based on "Clean Architecture" which is a pattern created by Robert C. Martin "Uncle Bob".
 "It promotes a clear separation of concerns by dividing the application into concentric layers, with each layer having its responsibilities and dependencies. The fundamental principle behind Clean Architecture is the Dependency Rule, which states that dependencies should always point inward toward the more stable and abstract layers, rather than outward to more concrete and volatile layers."
