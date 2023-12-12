@@ -6,8 +6,7 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        CreateMap<TransportOrder, TransportOrderDto>(MemberList.Destination);
-        CreateMap<TransportOrderDto, TransportOrder>(MemberList.Source);
+        CreateMap<TransportOrder, TransportOrderDto>().ReverseMap();
         // CreateMap<TransportOrderCreateRequestDTO, TransportOrder>(MemberList.Source);
         // CreateMap<TransportOrderUpdateRequestDTO, TransportOrder>(MemberList.Source);
     }

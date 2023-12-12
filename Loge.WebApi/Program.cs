@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<ITransportOrderService, TransportOrderService>();
 
-builder.Services.AddAutoMapper(config => { }, typeof(Program).Assembly);
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddInfrastructureServices(builder.Configuration);
 
