@@ -86,7 +86,6 @@ Google Protobuf - Remote Procedure Call
 RPC is like WCF, but uses Protobuf's binary protocol to transfer data, limiting the data overhead.
 It is multi-platform
 
-
 # Additional thoughts
 The TransportOrder, which is an entity that would have it's state and perhaps content changed when being processed,
 would be an ideal candidate for Event Sourcing architectural pattern.
@@ -95,6 +94,14 @@ Event Sourcing is a architectural pattern that saves historical changes to an en
 which an regular DB update would do. Instead it applies another row with the decired change.
 
 And since an TransportOrder is something that can change from "New"->"InProcess"->"Delivered", then these states would be applied as new rows in the DB.
+
+Another approach would be to have a separate TransportOrderState table indicating the state changes a TransportOrder faces when being processed, for a historical overview.
+
+# Notes
+Unit Tests and Integration Tests have not been applied due to limited time.
+So my main focus was to get a working solution for the case scenario.
+
+Behavior Driven Development and Test Driven Development would be an ideal approach to develop this to be as robust and tested as possible.
 
 When then consuming the entity, all the rows are consumed and combined and the entity is formed this way by applying all the "events" ("transactions").
 
