@@ -29,6 +29,25 @@ The aim is to provide the enduser REST endpoints to create a TransportOrder, con
 3. Setup and Migrate the database: "dotnet ef database update"
 4. Run "Loge.WebApi" and see a swagger page
 
+# Project Structure
+
+## Loge.Application.Contracts
+Contains DTOs and Mapping with Domain Entities from Loge.Domain
+This layer injects Loge.Domain.
+
+## Loge.Application
+Contains Application Services which are consumed by Loge.WebApi.
+This layer injects Loge.Domain.
+
+## Loge.Domain
+Contains repository interfaces and domain entities
+
+## Loge.Infrastructure
+Contains EF Core implementation with DBContext, Code-First migrations and repository implementations
+This layer injects Loge.Domain.
+
+## Loge.WebApi
+.NET WebApi with API Controllers consuming services from Loge.Application and using DTO's from Loge.Application.Contracts
 
 # Architecture
 ## Clean Architecture
@@ -51,6 +70,11 @@ Google Protobuf - Remote Procedure Call
 RPC is like WCF, but uses Protobuf's binary protocol to transfer data, limiting the data overhead.
 It is multi-platform
 
+## Diagram
+```mermaid
+
+```
+
 # Additional thoughts
 The TransportOrder, which is an entity that would have it's state and perhaps content changed when being processed,
 would be an ideal candidate for Event Sourcing architectural pattern.
@@ -60,7 +84,7 @@ which an regular DB update would do. Instead it applies another row with the dec
 
 And since an TransportOrder is something that can change from "New"->"InProcess"->"Delivered", then these states would be applied as new rows in the DB.
 
-When then consuming the entity, all the rows are consumed and the entity is 
+When then consuming the entity, all the rows are consumed and combined and the entity is formed this way by applying all the "events" ("transactions").
 
 
 https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing
