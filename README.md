@@ -61,6 +61,9 @@ This layer injects Loge.Domain.
 ## Loge.WebApi
 .NET WebApi with API Controllers consuming services from Loge.Application and using DTO's from Loge.Application.Contracts
 
+## Loge.Grpc (Unfinished)
+.NET Grpc API consuming services from Loge.Application and using DTO's from Loge.Application.Contracts. 
+
 # Architecture
 
 ## SOLID Principles
